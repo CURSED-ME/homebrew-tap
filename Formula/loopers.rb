@@ -5,21 +5,21 @@
 class Loopers < Formula
   desc "The Circuit Breaker for AI API Billing"
   homepage "https://tryloopers.com"
-  version "2.11.0"
+  version "2.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.11.0/loopers_Darwin_x86_64.tar.gz"
-      sha256 "b0d7ecddfa0601c9a9dde1eb7a553f40e3c68612b796b8ca0051ebc0972a0cf0"
+      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.12.0/loopers_Darwin_x86_64.tar.gz"
+      sha256 "5ea31b86c4eae54bb53f2568e9a1ff62f39c72c8dbd4517d95a3e7f24e80aae1"
 
       define_method(:install) do
         bin.install "loopers"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.11.0/loopers_Darwin_arm64.tar.gz"
-      sha256 "0559eecfc5955e9419e7690fde70b7b06fee4cc4881019dd20528ce34ffdb012"
+      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.12.0/loopers_Darwin_arm64.tar.gz"
+      sha256 "59010871912c45979a75a844d2b0e5cf222d615ddee9b69158df2aaf051ddc3a"
 
       define_method(:install) do
         bin.install "loopers"
@@ -29,15 +29,15 @@ class Loopers < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.11.0/loopers_Linux_x86_64.tar.gz"
-      sha256 "4463a0d516adbf1cd5a9631f5daa558abe4ca397f4ddba9e38a1d933ebd67e87"
+      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.12.0/loopers_Linux_x86_64.tar.gz"
+      sha256 "9bcd977e1500ce17dd07f2223e0fa72b3f2fc2e22fd5386fa923cf09ada8f1df"
       define_method(:install) do
         bin.install "loopers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.11.0/loopers_Linux_arm64.tar.gz"
-      sha256 "4e52f6a38e212b05b83ec3b30db68cd49ceac91c63dbaef7e607c10823b4d995"
+      url "https://github.com/CURSED-ME/loopers-oss/releases/download/v2.12.0/loopers_Linux_arm64.tar.gz"
+      sha256 "185af1f9493169990078330293e221a57334988385dda0c0f3ef9426f6ddcd21"
       define_method(:install) do
         bin.install "loopers"
       end
